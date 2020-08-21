@@ -1,0 +1,8 @@
+<app-search-input
+  [searchControl]="searchControl"
+></app-search-input>
+<app-collection-tabs></app-collection-tabs>
+<app-photos-container
+  [photos]="photos$ | async"
+></app-photos-container>
+<app-modal></app-modal>

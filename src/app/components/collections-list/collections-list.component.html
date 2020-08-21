@@ -1,0 +1,27 @@
+<div class="collections">
+  <div
+    class="create-collection"
+    (click)="createCollection()"
+  >
+    Create new collection
+  </div>
+
+  <div
+    class="collection"
+    *ngFor="let collection of collections"
+    (click)="toggleCollections(collection)"
+  >
+    <div class="info">
+      <span class="photos-count">{{ collection.count }} photos</span>
+      <span class="collection-name">{{ collection.name }}</span>
+    </div>
+    <div class="icon">
+      <ng-container
+        *ngIf="selectedCollections[collection.name]; then checked"
+      ></ng-container>
+    </div>
+  </div>
+</div>
+<ng-template #checked>
+  <i class="fa fa-check"></i>
+</ng-template>

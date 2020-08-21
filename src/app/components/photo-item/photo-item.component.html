@@ -1,0 +1,49 @@
+<div
+  class="photo"
+>
+  <a href="{{ photo.links.download }}" download target="_blank">
+    <img
+      [src]="photo.urls.small"
+      [alt]="photo.links.download"
+      [title]="photo.alt_description"
+    >
+  </a>
+</div>
+<div class="top-panel">
+  <div class="add-to-collection">
+    <button
+      (click)="addToCollections(photo)"
+    >
+      <i class="fa fa-plus"></i>
+    </button>
+  </div>
+</div>
+<div class="bottom-panel">
+  <div class="user-info">
+    <div class="user-avatar">
+      <a
+        href="{{ photo.user.links.html }}"
+        title="{{ photo.user.name }}"
+      >
+        <img src="{{ photo.user.profile_image.small }}" />
+      </a>
+    </div>
+    <div class="user-name">
+      <a
+        href="{{ photo.user.links.html }}"
+        title="{{ photo.user.name }}"
+      >{{ photo.user.name }}</a>
+    </div>
+  </div>
+  <div class="save-btn">
+    <button>
+      <a
+        href="{{ photo.links.download }}"
+        download
+        target="_blank"
+      >
+        <i class="fa fa-download"></i>
+      </a>
+    </button>
+  </div>
+</div>

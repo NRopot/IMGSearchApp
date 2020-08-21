@@ -1,0 +1,42 @@
+<div
+  class="wrapper"
+  *ngIf="windows.size > 0"
+>
+  <div
+    class="notification"
+    @rightLeft
+    *ngFor="let window of windows"
+  >
+    <div
+      class="close"
+      (click)="close(window)"
+    >
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="header">
+      <span>{{ window.header }}</span>
+    </div>
+    <div class="collections-list">
+      <ng-container
+        [ngSwitch]="window.mode"
+      >
+        <ng-container
+          *ngSwitchCase="'add'"
+        >
+          <app-collections-list
+            [photo]="window.payload"
+          ></app-collections-list>
+        </ng-container>
+
+        <ng-container
+          *ngSwitchCase="'create'"
+        >
+          <app-create-collection
+            (onCreate)="confirm(window)"
+            (onCanceled)="close(window)"
+          ></app-create-collection>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</div>

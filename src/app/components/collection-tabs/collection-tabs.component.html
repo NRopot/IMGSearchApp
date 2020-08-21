@@ -1,0 +1,15 @@
+<div class="tabs">
+  <div
+    [ngClass]="{ all: true, tab: true, active: selectedTabs.length === 0 }"
+    (click)="selectAllTabs()"
+  >
+    All
+  </div>
+  <div
+    [ngClass]="{ tab: true, active: selectedTabs.includes(tab.name)}"
+    *ngFor="let tab of collections$ | async"
+    (click)="selectTabs(tab.name)"
+  >
+  {{ tab.name }}
+  </div>
+</div>

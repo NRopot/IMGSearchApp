@@ -1,0 +1,54 @@
+.create-collection {
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & input {
+      font-size: 20px;
+      font-weight: lighter;
+      padding: 0 10px;
+      font-family: "Script MT Bold", sans-serif;
+      height: 40px;
+      border-radius: 3px;
+      border: 1px solid #767676;
+      margin-bottom: 15px;
+    }
+
+    & label {
+      color: black;
+      font-size: 1.2rem;
+      font-family: "Script MT Bold", sans-serif;
+      margin-bottom: 5px;
+    }
+
+    & textarea {
+      resize: none;
+      margin-bottom: 15px;
+    }
+
+    & .actions {
+      display: flex;
+      justify-content: space-between;
+
+      & .cancel,
+      & .create {
+        cursor: pointer;
+      }
+
+      & .create {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-family: "Script MT Bold", sans-serif;
+        border: 1px solid #767676;
+      }
+    }
+  }
+}
+
+.optional {
+  color: #767676;
+}

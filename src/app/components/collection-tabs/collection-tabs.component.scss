@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  & .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & .tab {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: black;
+      cursor: pointer;
+      font-size: 21px;
+      padding: 10px 15px;
+      border-radius: 35px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      font-family: "Script MT Bold", sans-serif;
+
+      &.all {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      &:hover {
+        color: #0b2225;
+      }
+
+      &.active {
+        color: white;
+        background-color: #767676;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

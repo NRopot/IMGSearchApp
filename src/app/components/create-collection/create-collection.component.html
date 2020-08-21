@@ -1,0 +1,30 @@
+<div class="create-collection">
+  <form [formGroup]="createCollectionForm" (ngSubmit)="onSubmit()">
+    <label>
+      Name
+    </label>
+    <input
+      type="text"
+      formControlName="name"
+    />
+    <label>
+      Description
+      <span class="optional">(optional)</span>
+    </label>
+    <textarea
+      rows="5"
+      wrap="soft"
+      name="description"
+      resize="none"
+      formControlName="description"
+    ></textarea>
+
+    <div class="actions">
+      <button
+        class="cancel"
+        (click)="onCancel()"
+      >Cancel</button>
+      <button class="create" type="submit">Create collection</button>
+    </div>
+  </form>
+</div>

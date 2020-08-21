@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  & .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 70%;
+    max-width: 1000px;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    border: 1px solid #eeeeee;
+
+    & .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      flex-basis: 0;
+      color: #767676;
+      font-size: 1.5rem;
+      margin-top: -4px;
+    }
+
+    & input {
+      background-color: #eeeeee;
+      font-size: 16px;
+      font-family: "Script MT Bold", sans-serif;
+      flex-grow: 20;
+      flex-basis: 0;
+      height: 35px;
+      padding-right: 20px;
+      outline: none;
+      border: none;
+    }
+  }
+
+}

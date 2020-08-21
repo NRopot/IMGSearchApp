@@ -1,0 +1,14 @@
+<div class="photos">
+
+  <div
+    class="columns"
+    *ngFor="let part_photos of (photos | divide: 3)"
+  >
+    <app-photo-item
+      class="photo"
+      *ngFor="let photo of part_photos;"
+      [photo]="photo"
+    ></app-photo-item>
+  </div>
+
+</div>
