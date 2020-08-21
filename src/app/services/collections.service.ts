@@ -1,8 +1,7 @@
-import { Injectable, OnInit } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { select, Store } from '@ngrx/store';
 
-import * as fromCollections from '../store/reducers/collections/collection.reducer';
 import * as fromRoot from '../store/reducers/index';
 import * as CollectionsActions from '../store/reducers/collections/collections.actions';
 import * as CollectionsSelectors from '../store/reducers/collections/collections.selector';

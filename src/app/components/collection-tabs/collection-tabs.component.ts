@@ -3,7 +3,6 @@ import { select, Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
 
 import * as fromRoot from 'src/app/store/reducers/index';
-import * as fromCollections from 'src/app/store/reducers/collections/collection.reducer';
 import * as CollectionsActions from 'src/app/store/reducers/collections/collections.actions';
 import * as photosActions from 'src/app/store/reducers/photos/photos.actions';
 import * as CollectionSelectors from 'src/app/store/reducers/collections/collections.selector';

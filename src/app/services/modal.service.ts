@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
-import { CollectionModalMode, ModalWindowModel } from '../models/modal/modal.model';
+import { Subject } from 'rxjs';
+
+import { ModalWindowModel } from '../models/modal/modal.model';
 
 
 @Injectable({

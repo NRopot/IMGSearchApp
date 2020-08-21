@@ -1,4 +1,5 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
 import { Photo } from '../../models/photos';
 import { DataService } from '../../services/data.service';
 import { ModalService } from '../../services/modal.service';
@@ -27,9 +28,4 @@ export class PhotoItemComponent implements OnInit {
       payload: photo
     });
   }
-
-  downloadPhoto(photo: Photo) {
-    return this.dataService.downloadPhoto(photo);
-  }
-
 }

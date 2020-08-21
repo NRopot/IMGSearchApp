@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import Unsplash, { toJson } from 'unsplash-js';
-import { from, Observable, Subject } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { select, Store } from '@ngrx/store';
 

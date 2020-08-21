@@ -5,6 +5,7 @@ import {
   useAnimation,
 } from '@angular/animations';
 import { Subscription } from 'rxjs';
+
 import { slideInRight, slideOutRight } from './modal.animations';
 import { ModalWindowModel } from '../../models/modal/modal.model';
 import { ModalService } from '../../services/modal.service';

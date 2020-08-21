@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { forkJoin, Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
 import { Photo } from '../../models/photos';
